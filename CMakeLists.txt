@@ -20,6 +20,7 @@ add_library(gemm_softmax_lib
     src/gemm/tiled_gemm.cu
     src/gemm/tiled_gemm_padded.cu
     src/gemm/tiled_gemm_vec4.cu
+    src/gemm/gemm_regtile_vec4.cu
     src/gemm/optimized_gemm.cu
     src/gemm/wmma_gemm.cu
     # Softmax kernels

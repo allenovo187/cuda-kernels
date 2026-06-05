@@ -17,6 +17,9 @@ void launch_tiled_gemm_vec4(const float* A, const float* B, float* C,
 void launch_optimized_gemm(const float* A, const float* B, float* C,
                              int M, int N, int K, cudaStream_t stream = 0);
 
+void launch_gemm_regtile_vec4(const float* A, const float* B, float* C,
+                                int M, int N, int K, cudaStream_t stream = 0);
+
 void launch_wmma_tf32_gemm(const float* A, const float* B, float* C,
                               int M, int N, int K, cudaStream_t stream = 0);
 
